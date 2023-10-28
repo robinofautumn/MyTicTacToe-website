@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Sometype+Mono:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #1ea843;
+  color: white;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-family: "Sometype Mono";
+}
+
+nav ul{
+  list-style-type: none;
+
+}
+
+.gameContainer{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.line {
+  height: 3px;
+  /* width: 36vw; */
+  width: 0;
+  left: 0;
+  background-color: #026709;
+  transition: 1s ease-in-out;
+  position: absolute;
+}
+
+.playContainer{
+  display: grid;
+  grid-template-rows: repeat(3, 12vw);
+  grid-template-columns: repeat(3, 12vw);
+  position: relative;
+}
+
+.info{
+  font-size: 1.3em;
+}
+
+.box{
+  cursor: pointer;
+  border: 3px solid rgb(19, 117, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+}
+
+.boxtext{
+  font-family: "IM Fell French Canon";
+  color: rgb(2, 87, 2);
+}
+
+.box:hover{
+  background-color: #a1d2ae;
+}
+
+.gameInfo{
+  font-family: "Sometype Mono";
+  padding: 0vw 20px;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 2s linear;
+  padding-top: 45px;
+  padding-left: 10em;
+}
+
+.bt-0{
+border-top: 0;
+}
+
+.bb-0{
+  border-bottom: 0;
+  }
+  
+.bl-0{
+  border-left: 0;
+  }
+  
+.br-0{
+  border-right: 0;
+  }
+
+
+#caps{
+    text-transform: capitalize;
+    font-size: 2em;
+    margin-top: 30px;
+  }
+
+#reset{
+  background-color: forestgreen;
+  cursor: pointer;
+  color: white;
+  height: 1.5em;
+  width: 90px;
+  border-radius: 15px;
+  font-family: 'Sometype Mono';
+  font-size: 1.3em;
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width:900px) 
+{
+  .gameContainer{
+    flex-wrap: wrap;
+  }  
+}
